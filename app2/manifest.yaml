@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: app2
-        image: prasad/app2:1.0
+        image: prasadyadav99/app2:1.0
 ---
 apiVersion: v1
 kind: Service
@@ -43,7 +43,7 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/tags: Environment=dev,Team=test
-    alb.ingress.kubernetes.io/group.name: prasad
+    alb.ingress.kubernetes.io/group.name: prasadyadav99
 spec:
   ingressClassName: alb
   rules:
